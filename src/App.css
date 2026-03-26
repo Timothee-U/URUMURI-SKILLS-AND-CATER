@@ -1,0 +1,9 @@
+/* app.css — Urumuri
+   All design tokens and global styles live in index.css.
+   This file is intentionally minimal. */
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

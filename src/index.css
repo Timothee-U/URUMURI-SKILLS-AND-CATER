@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Urumuri Brand — Calming teal & green */
+    --background: 150 20% 98%;
+    --foreground: 200 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 25% 15%;
+
+    /* Primary: Calming Teal #2E7D94 */
+    --primary: 193 52% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Healing Green #5AAC7B */
+    --secondary: 148 32% 51%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 150 15% 94%;
+    --muted-foreground: 200 10% 45%;
+
+    /* Accent: Warm Gold */
+    --accent: 40 70% 55%;
+    --accent-foreground: 200 25% 15%;
+
+    --destructive: 40 80% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 88%;
+    --input: 150 15% 88%;
+    --ring: 193 52% 38%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(193 52% 38%), hsl(193 52% 28%));
+    --card-gradient: linear-gradient(180deg, hsl(150 20% 98%), hsl(150 15% 94%));
+    --section-alt: 150 20% 96%;
+    --earth: 25 30% 45%;
+    --earth-light: 25 25% 92%;
+    --hope: 148 32% 51%;
+    --hope-light: 148 25% 92%;
+    --warmth: 40 70% 55%;
+    --warmth-light: 40 60% 92%;
+    --teal-glow: 193 52% 48%;
+
+    --shadow-soft: 0 4px 20px -4px hsl(193 52% 38% / 0.12);
+    --shadow-card: 0 2px 12px -2px hsl(200 25% 15% / 0.08);
+    --shadow-elevated: 0 8px 30px -8px hsl(193 52% 38% / 0.18);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 193 52% 38%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 150 15% 94%;
+    --sidebar-accent-foreground: 200 25% 15%;
+    --sidebar-border: 150 15% 88%;
+    --sidebar-ring: 193 52% 38%;
+  }
+
+  .dark {
+    --background: 200 25% 8%;
+    --foreground: 150 15% 94%;
+
+    --card: 200 20% 12%;
+    --card-foreground: 150 15% 94%;
+
+    --popover: 200 20% 12%;
+    --popover-foreground: 150 15% 94%;
+
+    --primary: 193 52% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 148 32% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 15% 18%;
+    --muted-foreground: 150 10% 60%;
+
+    --accent: 40 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 40 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 15% 20%;
+    --input: 200 15% 20%;
+    --ring: 193 52% 48%;
+
+    --sidebar-background: 200 25% 8%;
+    --sidebar-foreground: 150 15% 94%;
+    --sidebar-primary: 193 52% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 15% 18%;
+    --sidebar-accent-foreground: 150 15% 94%;
+    --sidebar-border: 200 15% 20%;
+    --sidebar-ring: 193 52% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  }
+
+  .bg-section-alt {
+    background-color: hsl(var(--section-alt));
+  }
+
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(193 52% 28%));
+  }
+
+  .bg-hope-light {
+    background-color: hsl(var(--hope-light));
+  }
+
+  .bg-warmth-light {
+    background-color: hsl(var(--warmth-light));
+  }
+
+  .bg-earth-light {
+    background-color: hsl(var(--earth-light));
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  /* Focus ring — accessible, on-brand */
+  .focus-ring {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+
+  /* Smooth section scroll targets */
+  .scroll-mt-navbar {
+    scroll-margin-top: 5rem;
+  }
+}
