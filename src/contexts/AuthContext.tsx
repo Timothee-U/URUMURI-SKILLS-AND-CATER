@@ -20,8 +20,8 @@ type AuthContextType = {
   user: User | null;
   session: Session | null;
   loading: boolean;
-  signIn: (email: string, password: string) => Promise<{ user: User | null; error: string | null }>;
-  signUp: (email: string, password: string, fullName: string) => Promise<{ user: User | null; error: string | null }>;
+  signIn: (email: string, password: string) => Promise<{ user: User | null; error: string | null; role?: string }>;
+  signUp: (email: string, password: string, fullName: string, role: string) => Promise<{ user: User | null; error: string | null }>;
   signOut: () => Promise<void>;
 };
 
@@ -74,13 +74,13 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       setUser(sessionData.user);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(sessionData));
 
-      return { user: sessionData.user, error: null };
+      return { user: sessionData.user, error: null, role: user.role };
     } catch (error) {
       return { user: null, error: 'Login failed' };
     }
   };
 
-  const signUp = async (email: string, password: string, fullName: string) => {
+  const signUp = async (email: string, password: string, fullName: string, role: string) => {
     try {
       // Get existing users
       const users = JSON.parse(localStorage.getItem('urumuri_users') || '[]');
@@ -95,6 +95,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         id: Date.now().toString(),
         email,
         password, // In real app, this would be hashed
+        role,
+        fullName,
         user_metadata: { full_name: fullName },
         created_at: new Date().toISOString(),
       };

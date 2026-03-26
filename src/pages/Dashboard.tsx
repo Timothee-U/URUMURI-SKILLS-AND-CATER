@@ -31,7 +31,7 @@ const Dashboard = () => {
 
     const fetchData = async () => {
       const [profileRes, rolesRes, jobsRes, sessionsRes] = await Promise.all([
-        Promise.resolve({ data: { full_name: "John Doe" } }),
+        Promise.resolve({ data: { full_name: user?.user_metadata?.full_name || "User" } }),
         Promise.resolve({ data: [{ role: "learner" }] }),
         Promise.resolve({ data: [] }),
         Promise.resolve({ data: [] }),

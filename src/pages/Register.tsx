@@ -22,6 +22,14 @@ const Register = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  const getDashboardPath = (role: string) => {
+    if (role === "admin") return "/admin";
+    if (role === "employer") return "/employer";
+    if (role === "mentor") return "/mentor-dashboard";
+    if (role === "counselor") return "/dashboard";
+    return "/dashboard";
+  };
+
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     if (password.length < 8) {
@@ -30,14 +38,14 @@ const Register = () => {
     }
     setLoading(true);
 
-    const { user, error } = await signUp(email, password, fullName);
+    const { user, error } = await signUp(email, password, fullName, selectedRole);
 
     setLoading(false);
     if (error) {
       toast({ title: "Registration failed", description: error, variant: "destructive" });
     } else if (user) {
       toast({ title: "Account created!", description: "Welcome to Urumuri!" });
-      navigate("/dashboard");
+      navigate(getDashboardPath(selectedRole));
     }
   };
 

@@ -13,15 +13,23 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  const getDashboardPath = (role: string) => {
+    if (role === "admin") return "/admin";
+    if (role === "employer") return "/employer";
+    if (role === "mentor") return "/mentor-dashboard";
+    if (role === "counselor") return "/dashboard";
+    return "/dashboard";
+  };
+
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    const { user, error } = await signIn(email, password);
+    const { user, error, role } = await signIn(email, password);
     setLoading(false);
     if (error) {
       toast({ title: "Sign in failed", description: error, variant: "destructive" });
-    } else if (user) {
-      navigate("/dashboard");
+    } else if (user && role) {
+      navigate(getDashboardPath(role));
     }
   };
 
