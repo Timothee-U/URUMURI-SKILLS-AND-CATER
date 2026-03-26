@@ -21,9 +21,9 @@ const MentorDashboard = () => {
 
     const fetchData = async () => {
       const [profileRes, mentorRes, sessionsRes] = await Promise.all([
-        /* removed supabase call */
-        /* removed supabase call */
-        /* removed supabase call */
+        Promise.resolve({ data: { full_name: "Mentor Name" } }),
+        Promise.resolve({ data: {} }),
+        Promise.resolve({ data: [] }),
       ]);
       setProfile(profileRes.data);
       setMentorProfile(mentorRes.data);
@@ -36,7 +36,8 @@ const MentorDashboard = () => {
   const displayName = profile?.full_name || user?.user_metadata?.full_name || user?.email?.split("@")[0] || "Mentor";
 
   const handleSessionAction = async (sessionId: string, status: string) => {
-    const { error } = await /* removed supabase call */;
+    // Mock update
+    const error = null;
     if (error) {
       toast({ title: "Error", description: error.message, variant: "destructive" });
     } else {
@@ -46,15 +47,13 @@ const MentorDashboard = () => {
   };
 
   const setupProfile = async () => {
-    const { error } = await /* removed supabase call */
-      user_id: user!.id,
-      expertise: [],
-      bio: "",
-    }]);
+    // Mock setup
+    const error = null;
     if (error && error.code !== "23505") {
       toast({ title: "Error", description: error.message, variant: "destructive" });
     } else {
-      const { data } = await /* removed supabase call */;
+      // Mock fetch
+      const data = {};
       setMentorProfile(data);
       toast({ title: "Profile created!" });
     }

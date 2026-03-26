@@ -50,16 +50,9 @@ const EmployerDashboard = () => {
     }
     setPosting(true);
 
-    const { error } = await /* removed supabase call */
-      employer_id: user!.id,
-      title: formData.title,
-      company: formData.company,
-      location: formData.location,
-      job_type: formData.job_type as any,
-      description: formData.description,
-      salary_range: formData.salary_range || null,
-      requirements: formData.requirements ? formData.requirements.split(",").map(r => r.trim()) : [],
-    }]);
+    // Mock posting
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    const error = null;
 
     setPosting(false);
     if (error) {

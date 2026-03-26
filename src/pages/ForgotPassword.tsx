@@ -13,9 +13,8 @@ const ForgotPassword = () => {
   const handleReset = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    const { error } = await /* removed supabase call */
-      redirectTo: `${window.location.origin}/reset-password`,
-    });
+    // Mock reset
+    const error = null;
     setLoading(false);
     if (error) {
       toast({ title: "Error", description: error.message, variant: "destructive" });

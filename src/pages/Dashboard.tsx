@@ -22,13 +22,8 @@ const Dashboard = () => {
   // Role-based redirect: non-learners go to their specific dashboard
   useEffect(() => {
     if (!user) return;
-    /* removed supabase call */
-      const r = data?.map((d) => d.role) || [];
-      if (r.includes("admin")) { navigate("/admin", { replace: true }); return; }
-      if (r.includes("employer")) { navigate("/employer", { replace: true }); return; }
-      if (r.includes("mentor")) { navigate("/mentor-dashboard", { replace: true }); return; }
-      setRedirecting(false);
-    });
+    // Mock: assume learner role
+    setRedirecting(false);
   }, [user, navigate]);
 
   useEffect(() => {
@@ -36,10 +31,10 @@ const Dashboard = () => {
 
     const fetchData = async () => {
       const [profileRes, rolesRes, jobsRes, sessionsRes] = await Promise.all([
-        /* removed supabase call */
-        /* removed supabase call */
-        /* removed supabase call */
-        /* removed supabase call */
+        Promise.resolve({ data: { full_name: "John Doe" } }),
+        Promise.resolve({ data: [{ role: "learner" }] }),
+        Promise.resolve({ data: [] }),
+        Promise.resolve({ data: [] }),
       ]);
 
       setProfile(profileRes.data);

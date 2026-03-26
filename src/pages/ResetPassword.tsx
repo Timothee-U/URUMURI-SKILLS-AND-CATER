@@ -25,7 +25,8 @@ const ResetPassword = () => {
       return;
     }
     setLoading(true);
-    const { error } = await /* removed supabase call */;
+    // Mock update
+    const error = null;
     setLoading(false);
     if (error) {
       toast({ title: "Error", description: error.message, variant: "destructive" });

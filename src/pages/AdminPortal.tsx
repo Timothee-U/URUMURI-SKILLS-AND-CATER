@@ -38,20 +38,18 @@ const AdminPortal = () => {
 
   useEffect(() => {
     if (!user) return;
-    /* removed supabase call */
-      .then(({ data }) => {
-        setIsAdmin(!!data && data.length > 0);
-      });
+    // Mock: assume admin
+    setIsAdmin(true);
   }, [user]);
 
   useEffect(() => {
     if (!isAdmin) return;
     const fetchAll = async () => {
       const [profilesRes, rolesRes, jobsRes, sessionsRes] = await Promise.all([
-        /* removed supabase call */
-        /* removed supabase call */
-        /* removed supabase call */
-        /* removed supabase call */
+        Promise.resolve({ data: [] }),
+        Promise.resolve({ data: [] }),
+        Promise.resolve({ data: [] }),
+        Promise.resolve({ data: [] }),
       ]);
 
       const rolesMap: Record<string, string[]> = {};

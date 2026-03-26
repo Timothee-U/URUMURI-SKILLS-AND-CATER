@@ -22,13 +22,13 @@ const ImpactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-sm font-semibold tracking-wider uppercase mb-3 block" style={{ color: "hsl(148, 32%, 70%)" }}>
+          <span className="text-sm font-semibold tracking-wider uppercase mb-3 block text-white/80">
             Our Impact
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-6" style={{ color: "hsl(0, 0%, 100%)" }}>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-white">
             Measurable Change, Real Lives
           </h2>
-          <p className="text-lg leading-relaxed" style={{ color: "hsl(150, 15%, 80%)" }}>
+          <p className="text-lg leading-relaxed text-white/80">
             Within 18 months, we aim to transform employment outcomes and reconciliation
             participation among genocide-affected youth in Rwanda.
           </p>
@@ -48,10 +48,10 @@ const ImpactSection = () => {
                 borderColor: "hsla(0, 0%, 100%, 0.15)",
               }}
             >
-              <div className="font-display text-3xl md:text-4xl font-bold mb-2" style={{ color: "hsl(148, 32%, 65%)" }}>
+              <div className="font-display text-3xl md:text-4xl font-bold mb-2 text-white/80">
                 {stat.value}
               </div>
-              <div className="text-sm leading-snug" style={{ color: "hsl(150, 15%, 75%)" }}>
+              <div className="text-sm leading-snug text-white/70">
                 {stat.label}
               </div>
             </motion.div>

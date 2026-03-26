@@ -14,7 +14,7 @@ const navItems = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { user } = useAuth();
+  const { user, signOut } = useAuth();
 
   return (
     <motion.nav
@@ -43,11 +43,16 @@ const Navbar = () => {
               </a>
             ))}
             {user ? (
-              <Link to="/dashboard">
-                <Button size="sm" variant="outline">
-                  Dashboard
+              <div className="flex items-center gap-3">
+                <Link to="/dashboard">
+                  <Button size="sm" variant="outline">
+                    Dashboard
+                  </Button>
+                </Link>
+                <Button size="sm" variant="ghost" onClick={signOut} className="text-muted-foreground hover:text-foreground">
+                  Sign Out
                 </Button>
-              </Link>
+              </div>
             ) : (
               <div className="flex items-center gap-3">
                 <Link to="/login">

@@ -17,19 +17,19 @@ const Partners = () => {
       <div className="bg-hero-gradient py-20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-secondary/10 blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="container mx-auto px-4 md:px-8 relative z-10">
-          <Link to="/" className="inline-flex items-center gap-2 mb-6 text-sm font-medium" style={{ color: "hsl(150, 15%, 75%)" }}>
+          <Link to="/" className="inline-flex items-center gap-2 mb-6 text-sm font-medium text-white/80">
             <ArrowLeft size={16} />
             Back to Home
           </Link>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <div className="flex items-center gap-2 mb-4">
-              <Handshake size={20} style={{ color: "hsl(148, 32%, 65%)" }} />
-              <span className="text-sm font-semibold uppercase tracking-wider" style={{ color: "hsl(148, 32%, 65%)" }}>Reconciliation</span>
+              <Handshake size={20} className="text-secondary" />
+              <span className="text-sm font-semibold uppercase tracking-wider text-secondary">Reconciliation</span>
             </div>
-            <h1 className="font-display text-3xl md:text-4xl font-bold mb-4" style={{ color: "hsl(0, 0%, 100%)" }}>
+            <h1 className="font-display text-3xl md:text-4xl font-bold mb-4 text-white">
               Healing & Reconciliation
             </h1>
-            <p className="text-lg max-w-2xl" style={{ color: "hsl(150, 15%, 80%)" }}>
+            <p className="text-lg max-w-2xl text-white/80">
               Building bridges between communities through dialogue, education, and shared healing.
               All content is CNLG-approved and presented with trauma-informed care.
             </p>

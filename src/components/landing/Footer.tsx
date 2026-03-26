@@ -11,21 +11,21 @@ const Footer = () => {
               <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-display font-bold text-sm">U</span>
               </div>
-              <span className="font-display font-bold text-xl" style={{ color: "hsl(0, 0%, 95%)" }}>
+              <span className="font-display font-bold text-xl text-white/95">
                 Urumuri
               </span>
             </div>
-            <p className="text-sm leading-relaxed" style={{ color: "hsl(200, 10%, 60%)" }}>
+            <p className="text-sm leading-relaxed text-white/60">
               Skills & Reconciliation Platform for Genocide-Affected Youth in Rwanda.
             </p>
           </div>
 
           {/* Programs */}
           <div>
-            <h4 className="font-semibold text-sm mb-4" style={{ color: "hsl(0, 0%, 90%)" }}>
+            <h4 className="font-semibold text-sm mb-4 text-white/90">
               Programs
             </h4>
-            <ul className="space-y-2 text-sm" style={{ color: "hsl(200, 10%, 60%)" }}>
+            <ul className="space-y-2 text-sm text-white/60">
               <li><a href="#" className="hover:text-primary transition-colors">Digital Skills Training</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Job Matching</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Mentorship</a></li>
@@ -35,10 +35,10 @@ const Footer = () => {
 
           {/* Partners */}
           <div>
-            <h4 className="font-semibold text-sm mb-4" style={{ color: "hsl(0, 0%, 90%)" }}>
+            <h4 className="font-semibold text-sm mb-4 text-white/90">
               Partners
             </h4>
-            <ul className="space-y-2 text-sm" style={{ color: "hsl(200, 10%, 60%)" }}>
+            <ul className="space-y-2 text-sm text-white/60">
               <li>African Leadership University</li>
               <li>AERG</li>
               <li>IBUKA</li>
@@ -48,10 +48,10 @@ const Footer = () => {
 
           {/* Emergency & Contact */}
           <div>
-            <h4 className="font-semibold text-sm mb-4" style={{ color: "hsl(0, 0%, 90%)" }}>
+            <h4 className="font-semibold text-sm mb-4 text-white/90">
               Support & Emergency
             </h4>
-            <ul className="space-y-3 text-sm" style={{ color: "hsl(200, 10%, 60%)" }}>
+            <ul className="space-y-3 text-sm text-white/60">
               <li className="flex items-center gap-2">
                 <Phone size={14} className="text-secondary" />
                 <span>ISANGE Hotline: 3029</span>
@@ -68,12 +68,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t pt-6" style={{ borderColor: "hsl(200, 10%, 20%)" }}>
+        <div className="border-t pt-6 border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs" style={{ color: "hsl(200, 10%, 50%)" }}>
+            <p className="text-xs text-white/50">
               © 2026 Urumuri Skills & Reconciliation Platform. A student-led initiative at ALU.
             </p>
-            <div className="flex gap-6 text-xs" style={{ color: "hsl(200, 10%, 50%)" }}>
+            <div className="flex gap-6 text-xs text-white/50">
               <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-primary transition-colors">Terms of Use</a>
               <a href="#" className="hover:text-primary transition-colors">Data Protection</a>
