@@ -36,7 +36,7 @@ const MissionSection = () => {
             <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-5">
               <Target size={24} className="text-secondary" />
             </div>
-            <h3 className="font-display text-xl font-bold text-mute-foreground mb-3">
+            <h3 className="font-display text-xl font-bold text-black mb-3">
               Economic Empowerment
             </h3>
             <p className="text-black leading-relaxed">
