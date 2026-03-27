@@ -39,7 +39,7 @@ const MissionSection = () => {
             <h3 className="font-display text-xl font-bold text-foreground mb-3">
               Economic Empowerment
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-foreground leading-relaxed">
               Digital skills training in web development, data analysis, graphic design, and
               digital marketing — paired with job placement connecting youth to Rwanda's
               growing tech sector.
