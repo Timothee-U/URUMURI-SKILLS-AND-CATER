@@ -76,10 +76,10 @@ const ProgramsSection = () => {
           <span className="text-sm font-semibold tracking-wider uppercase text-primary mb-3 block">
             Platform Features
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-black mb-6">
             Five Pillars of Transformation
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
+          <p className="text-black text-lg leading-relaxed">
             An integrated digital ecosystem that treats skills, jobs, reconciliation,
             and mental health as one interconnected system.
           </p>
