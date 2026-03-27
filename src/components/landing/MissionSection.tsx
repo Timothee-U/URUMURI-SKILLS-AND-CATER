@@ -56,10 +56,10 @@ const MissionSection = () => {
             <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mb-5">
               <Handshake size={24} className="text-accent" />
             </div>
-            <h3 className="font-display text-xl font-bold text-foreground mb-3">
+            <h3 className="font-display text-xl font-bold text-black mb-3">
               Reconciliation & Healing
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-black leading-relaxed">
               Testimonial therapy, history education, psychological support groups, and dialogue
               therapy — creating safe spaces for survivors and perpetrators' children to build
               shared futures.
