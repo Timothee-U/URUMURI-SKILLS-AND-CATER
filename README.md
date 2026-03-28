@@ -35,18 +35,16 @@ npm install
 npm run dev
 ```
 
-4. Open [http://localhost:8081](http://localhost:8081) in your browser to access the application.
+4. Open THE LINK provided (eg: http://localhost...) in your browser to access the application.
 
+### PUBLIC URL
+You can also access the deployed url on https://urumuri-skills-and-cater-h301e8d7j-tuwayesu-9772s-projects.vercel.app/
 ### Build for Production
 
 ```bash
 npm run build
 npm run preview
 ```
-
-## Authentication System
-
-This application uses a local authentication system with localStorage for data persistence. No external database is required - all user accounts and sessions are stored locally in your browser.
 
 ### User Registration
 - Choose from 4 roles: Learner, Employer, Mentor, or Counselor
@@ -57,9 +55,6 @@ This application uses a local authentication system with localStorage for data p
 - Email/password authentication
 - Persistent sessions across browser refreshes
 - Role-based dashboard access
-
-### Demo Accounts
-For testing purposes, you can register new accounts or use any email/password combination - the system will create accounts on-the-fly.
 
 ## Navigation Guide
 
@@ -85,7 +80,7 @@ The application includes multiple user roles and pages. Here's how to explore al
 
 ### Authenticated Pages
 
-After logging in, users are redirected based on their role. All pages use mock data for demonstration.
+After logging in, users are redirected based on their role. Mock data is involved for demo.
 
 #### Learner Dashboard (`/dashboard`) - Default for learners
 - Overview of learning progress, job matches, and mentor sessions
@@ -170,7 +165,7 @@ src/
 
 ### Mock Data
 
-The application uses mock data for all features, allowing full functionality without a backend. All API calls are simulated with realistic data structures.
+The application uses mock data for demo. All API calls are simulated with realistic data structures.
 
 ## Contributing
 
