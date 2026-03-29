@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, Home, Gamepad2, Building2, Camera } from "lucide-react";
+import { Heart, Home, Gamepad2, Building2, Camera, ArrowLeft } from "lucide-react";
 
 const CCIBranch = () => {
   // All uploaded images from the cci-branch folder
@@ -372,6 +373,14 @@ const CCIBranch = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 px-4 py-2 mb-8 text-sm font-medium text-primary hover:text-primary/80 bg-primary/10 hover:bg-primary/20 rounded-lg transition-colors duration-200"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </Link>
+          
           <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
             CCI Urumuri
           </h1>
