@@ -38,7 +38,7 @@ npm run dev
 4. Open THE LINK provided (eg: http://localhost...) in your browser to access the application.
 
 ### PUBLIC URL
-You can also access the deployed url on [https://urumuri-skills-and-cater-h301e8d7j-tuwayesu-9772s-projects.vercel.app/](https://urumuri-skills-and-cater-h4kb4l02f-tuwayesu-9772s-projects.vercel.app/)
+You can also access the deployed url on [https://urumuri-skills-and-cater-h301e8d7j-tuwayesu-9772s-projects.vercel.app/](https://urumuri-skills-and-cater-h4kb4l02f-tuwayesu-9772s-projects.vercel.app/) or https://urumuri-skills-and-cater.vercel.app/ in case of any inconvenience.
 ### Build for Production
 
 ```bash
@@ -80,7 +80,7 @@ The application includes multiple user roles and pages. Here's how to explore al
 
 ### Authenticated Pages
 
-After logging in, users are redirected based on their role. Mock data is involved for demo.
+After logging in, users are redirected based on their role.
 
 #### Learner Dashboard (`/dashboard`) - Default for learners
 - Overview of learning progress, job matches, and mentor sessions
@@ -98,11 +98,6 @@ After logging in, users are redirected based on their role. Mock data is involve
 - View mentoring sessions
 - Update session statuses
 - Profile management
-
-#### Admin Portal (`/admin`)
-- User management across all roles
-- View and manage jobs, sessions
-- System overview
 
 ### Feature Pages
 
@@ -162,10 +157,6 @@ src/
 - `npm run preview` - Preview production build
 - `npm run test` - Run tests
 - `npm run lint` - Run ESLint
-
-### Mock Data
-
-The application uses mock data for demo. All API calls are simulated with realistic data structures.
 
 ## Contributing
 
