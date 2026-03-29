@@ -21,7 +21,7 @@ A comprehensive platform empowering Rwanda's youth through digital skills traini
 
 1. Clone the repository:
 ```bash
-git clone <[repository-url](https://github.com/Timothee-U/URUMURI-SKILLS-AND-CATER)>
+git clone <https://github.com/Timothee-U/URUMURI-SKILLS-AND-CATER>
 cd urumuri-skills-and-cater
 ```
 
