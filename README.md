@@ -38,7 +38,7 @@ npm run dev
 4. Open THE LINK provided (eg: http://localhost...) in your browser to access the application.
 
 ### PUBLIC URL
-You can also access the deployed url on https://urumuri-skills-and-cater-h301e8d7j-tuwayesu-9772s-projects.vercel.app/
+You can also access the deployed url on [https://urumuri-skills-and-cater-h301e8d7j-tuwayesu-9772s-projects.vercel.app/](https://urumuri-skills-and-cater-h4kb4l02f-tuwayesu-9772s-projects.vercel.app/)
 ### Build for Production
 
 ```bash
