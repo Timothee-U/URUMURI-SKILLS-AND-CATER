@@ -1,6 +1,6 @@
 # Urumuri - Skills & Reconciliation Platform
 
-A comprehensive platform empowering Rwanda's youth through digital skills training, bias-free job matching, trauma-informed mentorship, and reconciliation programs.
+A comprehensive platform empowering Rwanda's youth through digital skills training, bias-free job matching, trauma-informed mentorship, and reconciliation programs. With CCI-Urumuri as our first branch in action..
 
 ## Features
 
