@@ -10,6 +10,7 @@ const navItems = [
   { label: "Programs", href: "#programs", isAnchor: true },
   { label: "Impact", href: "#impact", isAnchor: true },
   { label: "Get Involved", href: "#involved", isAnchor: true },
+  { label: "CCI Urumuri", href: "/cci-branch", isAnchor: false },
 ];
 
 const Navbar = () => {
@@ -33,15 +34,25 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-              >
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) =>
+              item.isAnchor ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
             {user ? (
               <div className="flex items-center gap-3">
                 <Link to="/dashboard">
@@ -86,16 +97,27 @@ const Navbar = () => {
             className="md:hidden pb-4 border-t border-border"
           >
             <div className="flex flex-col gap-3 pt-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-primary px-2 py-2"
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                item.isAnchor ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="text-sm font-medium text-muted-foreground hover:text-primary px-2 py-2"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="text-sm font-medium text-muted-foreground hover:text-primary px-2 py-2"
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
               {user ? (
                 <Link to="/dashboard" onClick={() => setIsOpen(false)}>
                   <Button size="sm" variant="outline" className="w-full mt-2">

@@ -19,6 +19,7 @@ import MentorDashboard from "@/pages/MentorDashboard";
 import Reconciliation from "@/pages/Reconciliation";
 import EmployerDashboard from "@/pages/EmployerDashboard";
 import AdminPortal from "@/pages/AdminPortal";
+import CCIBranch from "@/pages/CCIBranch";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
             <Route path="/mentorship" element={<Mentorship />} />
             <Route path="/mentors" element={<ProtectedRoute><MentorBrowse /></ProtectedRoute>} />
             <Route path="/reconciliation" element={<Reconciliation />} />
+            <Route path="/cci-branch" element={<CCIBranch />} />
             <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
             <Route path="/employer" element={<ProtectedRoute><EmployerDashboard /></ProtectedRoute>} />
             <Route path="/mentor-dashboard" element={<ProtectedRoute><MentorDashboard /></ProtectedRoute>} />
