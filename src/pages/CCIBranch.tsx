@@ -405,7 +405,7 @@ const CCIBranch = () => {
               {/* CCI Rwanda Overview */}
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-primary">CCI Rwanda: Customer Management Excellence</h3>
-                <p className="text-foreground leading-relaxed">
+                <p className="text-black leading-relaxed">
                   CCI (Center for Business Process Outsourcing) is one of Rwanda's top providers of customer management services, 
                   supporting both domestic and international clients with world-class business process solutions. Our center drives 
                   economic growth and innovation in Rwanda's emerging tech sector.
