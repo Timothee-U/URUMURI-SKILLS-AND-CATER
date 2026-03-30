@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Home, Gamepad2, Building2, Camera, ArrowLeft } from "lucide-react";
 
 const CCIBranch = () => {
-  // All uploaded images from the cci-branch folder
   const images = [
     "/images/cci-branch/WhatsApp Image 2026-03-26 at 19.04.46.jpeg",
     "/images/cci-branch/WhatsApp Image 2026-03-26 at 19.04.47.jpeg",
@@ -115,10 +114,6 @@ const CCIBranch = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-background/95 relative overflow-hidden">
-      {/* Background Animation Elements - Diverse Shapes & Patterns */}
-      
-      {/* CIRCULAR FLOATING ORBS */}
-      {/* Top-left floating orb */}
       <motion.div
         className="absolute top-10 left-10 w-80 h-80 bg-primary/45 rounded-full blur-2xl shadow-2xl"
         animate={{
@@ -133,7 +128,6 @@ const CCIBranch = () => {
         }}
       />
       
-      {/* Bottom-right floating orb */}
       <motion.div
         className="absolute bottom-10 right-10 w-96 h-96 bg-secondary/45 rounded-full blur-2xl shadow-2xl"
         animate={{
@@ -148,7 +142,6 @@ const CCIBranch = () => {
         }}
       />
       
-      {/* Center orb - subtle movement */}
       <motion.div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-accent/35 rounded-full blur-2xl shadow-xl"
         animate={{
@@ -162,7 +155,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* Extra floating orbs */}
       <motion.div
         className="absolute top-1/3 right-1/4 w-64 h-64 bg-primary/30 rounded-full blur-2xl shadow-lg"
         animate={{
@@ -189,8 +181,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* ROTATING RECTANGLES */}
-      {/* Top-right rotating rectangle */}
       <motion.div
         className="absolute top-40 right-20 w-48 h-64 bg-gradient-to-r from-primary/40 to-accent/30 blur-xl shadow-lg"
         animate={{
@@ -205,7 +195,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* Bottom-left rotating rectangle */}
       <motion.div
         className="absolute bottom-40 left-16 w-56 h-40 bg-gradient-to-b from-secondary/38 to-primary/30 blur-xl shadow-lg"
         animate={{
@@ -220,8 +209,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* DIAGONAL ANIMATED LINES */}
-      {/* Diagonal line - top-left to bottom-right */}
       <motion.div
         className="absolute top-0 left-0 w-96 h-1.5 bg-gradient-to-r from-primary/45 via-accent/35 to-transparent blur-md shadow-lg"
         style={{ transform: "rotate(45deg)" }}
@@ -236,7 +223,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* Diagonal line - opposite direction */}
       <motion.div
         className="absolute bottom-0 right-0 w-80 h-2 bg-gradient-to-l from-secondary/45 via-primary/30 to-transparent blur-md shadow-lg"
         style={{ transform: "rotate(-45deg)" }}
@@ -251,8 +237,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* FLOATING TRIANGULAR SHAPES */}
-      {/* Triangle - top-center */}
       <motion.div
         className="absolute top-1/4 left-1/2 -translate-x-1/2 w-0 h-0 drop-shadow-2xl"
         style={{
@@ -273,7 +257,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* Triangle - bottom-right */}
       <motion.div
         className="absolute bottom-1/4 right-1/3 w-0 h-0 drop-shadow-2xl"
         style={{
@@ -294,8 +277,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* PULSING HEXAGONS (using rounded squares for approximation) */}
-      {/* Hexagon-like shape - top-right */}
       <motion.div
         className="absolute top-1/3 right-1/3 w-40 h-40 bg-gradient-to-br from-accent/40 to-primary/30 blur-xl shadow-2xl"
         style={{
@@ -313,7 +294,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* Organic blob shape - bottom-center */}
       <motion.div
         className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-56 h-56 bg-gradient-to-tl from-primary/40 via-secondary/30 to-accent/35 blur-xl shadow-2xl"
         style={{
@@ -337,8 +317,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* VERTICAL ANIMATED COLUMNS */}
-      {/* Column - left side */}
       <motion.div
         className="absolute left-1/4 top-0 bottom-0 w-1.5 bg-gradient-to-b from-primary/0 via-secondary/45 to-accent/0 blur-md shadow-xl"
         animate={{
@@ -352,7 +330,6 @@ const CCIBranch = () => {
         }}
       />
 
-      {/* Column - right side */}
       <motion.div
         className="absolute right-1/3 top-0 bottom-0 w-2 bg-gradient-to-b from-accent/0 via-primary/40 to-secondary/0 blur-md shadow-lg"
         animate={{
@@ -389,7 +366,6 @@ const CCIBranch = () => {
           </p>
         </motion.div>
 
-        {/* About Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -402,7 +378,6 @@ const CCIBranch = () => {
               <CardTitle className="text-3xl text-foreground">About CCI Urumuri</CardTitle>
             </CardHeader>
             <CardContent className="space-y-8">
-              {/* CCI Rwanda Overview */}
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-primary">CCI Rwanda: Customer Management Excellence</h3>
                 <p className="text-black leading-relaxed">
@@ -414,65 +389,60 @@ const CCIBranch = () => {
 
               <div className="h-px bg-border" />
 
-              {/* CCI Urumuri Mission */}
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-primary">CCI Urumuri: Beyond Business Excellence</h3>
-                <p className="text-foreground leading-relaxed mb-4">
+                <p className="text-black leading-relaxed mb-4">
                   CCI Urumuri extends our commitment beyond business operations to create a workplace that prioritizes employee 
                   wellbeing, healing, and social consciousness. Our branch is dedicated to:
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                  {/* Mental Health Support */}
                   <div className="bg-white/50 p-4 rounded-lg border border-border">
                     <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
                       <Heart className="w-5 h-5" />
                       Employee Mental Health
                     </h4>
-                    <p className="text-sm text-foreground">
+                    <p className="text-sm text-black">
                       Supporting the psychological and emotional wellbeing of our team members, especially genocide survivors, 
                       through counseling services, wellness programs, and a compassionate workplace culture.
                     </p>
                   </div>
 
-                  {/* Genocide Education */}
                   <div className="bg-white/50 p-4 rounded-lg border border-border">
                     <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
                       <Building2 className="w-5 h-5" />
                       Historical Awareness
                     </h4>
-                    <p className="text-sm text-foreground">
+                    <p className="text-sm text-black">
                       Enlightening our employees about the 1994 Genocide against the Tutsi, fostering understanding of Rwanda's 
                       history and the importance of never allowing such atrocities to happen again.
                     </p>
                   </div>
 
-                  {/* Unity & Reconciliation */}
                   <div className="bg-white/50 p-4 rounded-lg border border-border">
                     <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
                       <Gamepad2 className="w-5 h-5" />
                       Unity & Reconciliation
                     </h4>
-                    <p className="text-sm text-foreground">
+                    <p className="text-sm text-black">
                       Promoting unity among employees from diverse backgrounds through team-building activities, shared experiences, 
                       and collaborative projects that celebrate our common humanity.
                     </p>
                   </div>
 
-                  {/* Community Impact */}
                   <div className="bg-white/50 p-4 rounded-lg border border-border">
                     <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
                       <Home className="w-5 h-5" />
                       Community Development
                     </h4>
-                    <p className="text-sm text-foreground">
+                    <p className="text-sm text-black">
                       Taking tangible action through housing initiatives, skills development, and direct support for genocide survivors 
                       and vulnerable communities in Rwanda.
                     </p>
                   </div>
                 </div>
 
-                <p className="text-foreground leading-relaxed mt-4 italic">
+                <p className="text-black leading-relaxed mt-4 italic">
                   At CCI Urumuri, we believe that true success is measured not only in business growth, but in the healing, 
                   empowerment, and dignity we bring to our employees and communities.
                 </p>
