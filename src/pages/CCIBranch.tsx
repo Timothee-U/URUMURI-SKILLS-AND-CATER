@@ -410,7 +410,6 @@ const CCIBranch = () => {
 
                   <div className="bg-white/50 p-4 rounded-lg border border-border">
                     <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
-                      <Building2 className="w-5 h-5" />
                       Historical Awareness
                     </h4>
                     <p className="text-sm text-black">
@@ -421,7 +420,6 @@ const CCIBranch = () => {
 
                   <div className="bg-white/50 p-4 rounded-lg border border-border">
                     <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
-                      <Gamepad2 className="w-5 h-5" />
                       Unity & Reconciliation
                     </h4>
                     <p className="text-sm text-black">
@@ -432,7 +430,6 @@ const CCIBranch = () => {
 
                   <div className="bg-white/50 p-4 rounded-lg border border-border">
                     <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
-                      <Home className="w-5 h-5" />
                       Community Development
                     </h4>
                     <p className="text-sm text-black">
@@ -451,7 +448,6 @@ const CCIBranch = () => {
           </Card>
         </motion.div>
 
-        {/* Activities Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
