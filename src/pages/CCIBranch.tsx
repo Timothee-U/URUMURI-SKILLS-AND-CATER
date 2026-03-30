@@ -455,9 +455,6 @@ const CCIBranch = () => {
           className="mb-20"
         >
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold tracking-wider uppercase text-primary mb-3 block">
-              Community Impact
-            </span>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
               Our Community Activities
             </h2>
