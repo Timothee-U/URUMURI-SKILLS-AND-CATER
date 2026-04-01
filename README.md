@@ -35,7 +35,7 @@ npm install
 npm run dev
 ```
 
-4. Open THE LINK provided (eg: http://localhost...) in your browser to access the application.
+4. Open THE LINK provided (eg: http://localhost...) to access the application.
 
 ### PUBLIC URL
 You can also access the deployed url on [https://urumuri-skills-and-cater-h301e8d7j-tuwayesu-9772s-projects.vercel.app/](https://urumuri-skills-and-cater-h4kb4l02f-tuwayesu-9772s-projects.vercel.app/) or https://urumuri-skills-and-cater.vercel.app/ in case of any inconvenience.
@@ -55,67 +55,6 @@ npm run preview
 - Email/password authentication
 - Persistent sessions across browser refreshes
 - Role-based dashboard access
-
-## Navigation Guide
-
-The application includes multiple user roles and pages. Here's how to explore all features:
-
-### Public Pages (No Login Required)
-
-1. **Landing Page** (`/`)
-   - Hero section with platform overview
-   - Mission, programs, impact, and get involved sections
-   - Navigation to login/register
-
-2. **Login** (`/login`)
-   - Email/password authentication
-   - Links to registration and password reset
-
-3. **Register** (`/register`)
-   - Multi-step registration with role selection
-   - Roles: Learner, Employer, Mentor, Counselor
-
-4. **Forgot Password** (`/forgot-password`)
-   - Password reset functionality
-
-### Authenticated Pages
-
-After logging in, users are redirected based on their role.
-
-#### Learner Dashboard (`/dashboard`) - Default for learners
-- Overview of learning progress, job matches, and mentor sessions
-- Quick actions: Continue Learning, Browse Jobs, Find Mentor, Reconciliation
-- Skills progress tracking
-- Upcoming mentor sessions
-- Available job listings
-
-#### Employer Dashboard (`/employer`)
-- Post new job listings
-- View posted jobs with application counts
-- Manage job status (active/closed)
-
-#### Mentor Dashboard (`/mentor-dashboard`)
-- View mentoring sessions
-- Update session statuses
-- Profile management
-
-### Feature Pages
-
-5. **Learn** (`/learn`)
-   - Browse available courses and skills tracks
-   - Learning progress dashboard
-
-6. **Jobs** (`/jobs`)
-   - Job listings with filters
-   - Job details and applications
-
-7. **Mentorship** (`/mentors` or `/mentorship`)
-   - Browse available mentors
-   - Book mentoring sessions
-
-8. **Reconciliation** (`/reconciliation`)
-   - Community reconciliation programs
-   - Support resources
 
 ### Navigation Tips
 
